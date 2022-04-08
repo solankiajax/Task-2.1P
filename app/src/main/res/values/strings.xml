@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="textOne"></string>
+    <string name="textTwo"></string>
+    <string name="textThree"></string>
+    <string name="buttonMetric" />
+    <string name="buttonCelcius" />
+    <string name="buttonKG" />
+    <string name="numberdecimal" ></string>
+    <string-array name="units">
+        <item>Metre</item>
+        <item>Celsius</item>
+        <item>Kilograms</item>
+    </string-array>>
+</resources>

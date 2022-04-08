@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTwo"
+        android:layout_width="273dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/textTwo"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textOne" />
+
+    <TextView
+        android:id="@+id/textThree"
+        android:layout_width="273dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/textThree"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTwo" />
+
+    <EditText
+        android:id="@+id/decimalNumber"
+        android:layout_width="195dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/numberdecimal"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColorHint="#546E7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textOne"
+        android:layout_width="273dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="47dp"
+        android:text="@string/textOne"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/decimalNumber" />
+
+    <ImageButton
+        android:id="@+id/buttonMetric"
+        android:layout_width="106dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/buttonMetric"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCelcius"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textThree"
+        app:layout_constraintVertical_bias="0.777"
+        app:srcCompat="@drawable/_84cmtoinches"
+        tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/buttonCelcius"
+        android:layout_width="111dp"
+        android:layout_height="101dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/buttonCelcius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonKG"
+        app:layout_constraintTop_toBottomOf="@+id/textThree"
+        app:layout_constraintVertical_bias="0.711"
+        app:srcCompat="@drawable/_84celcius"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/buttonKG"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/buttonKG"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textThree"
+        app:layout_constraintVertical_bias="0.718"
+        app:srcCompat="@drawable/_84g"
+        tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spinnerMenu"
+        android:layout_width="144dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toStartOf="@+id/decimalNumber"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</android.support.constraint.ConstraintLayout>
